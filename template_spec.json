@@ -1,0 +1,146 @@
+{
+  "_说明": "研究进展 DOCX 排版模板。render_docx.py 读取本文件决定一切格式，content.json 只提供内容。改动本文件即改变模板，无需改代码；改完必须重跑回归验证。",
+  "_来源": "样式底座参考 DOCX（52 份历史存档实测归纳，底座文件本身不进仓库）",
+  "page": {
+    "width_twips": 11906,
+    "height_twips": 16838,
+    "margin_twips": 1134
+  },
+  "title": {
+    "ascii": "Times New Roman Bold",
+    "eastAsia": "方正小标宋简体",
+    "cs": "方正小标宋简体",
+    "sz": 32,
+    "bold": true,
+    "align": "center",
+    "kern": "0",
+    "shd_fill": "FFFFFF"
+  },
+  "section": {
+    "ascii": "Times New Roman",
+    "eastAsia": "宋体",
+    "cs": "Times New Roman",
+    "sz": 24,
+    "bold": true,
+    "align": "left",
+    "plan_title_color": "FF0000"
+  },
+  "list": {
+    "style_id": "13",
+    "ind": {
+      "left": 218,
+      "leftChars": 104,
+      "firstLine": 221,
+      "firstLineChars": 100
+    },
+    "ascii": "Times New Roman",
+    "eastAsia": "宋体",
+    "sz": 22,
+    "num_id_summary": 0,
+    "num_id_plan": 1
+  },
+  "paper": {
+    "style_id": "13",
+    "keep_next": true,
+    "page_break_before": true,
+    "ind": {
+      "left": 360,
+      "leftChars": 0,
+      "hanging": 360,
+      "firstLineChars": 0
+    },
+    "ascii": "Times New Roman",
+    "eastAsia": "宋体",
+    "sz": 24,
+    "bold": true,
+    "num_id": 0
+  },
+  "table": {
+    "style_id": "9",
+    "cant_split": true,
+    "keep_together": true,
+    "width_dxa": 11057,
+    "col_widths": [
+      2549,
+      1370,
+      1704,
+      1310,
+      1394,
+      1505,
+      1225
+    ],
+    "border_sz": "4",
+    "cell_margin": {
+      "top": 0,
+      "left": 108,
+      "bottom": 0,
+      "right": 108
+    },
+    "row_height_header": 742,
+    "row_height_body": 90,
+    "pos": {
+      "leftFromText": "180",
+      "rightFromText": "180",
+      "vertAnchor": "text",
+      "horzAnchor": "page",
+      "tblpX": "751",
+      "tblpY": "299"
+    },
+    "header_font": {
+      "ascii": "Times New Roman",
+      "eastAsia": "宋体",
+      "cs": "Times New Roman",
+      "sz": 21
+    },
+    "repeat_header": true
+  },
+  "spacers": {
+    "_说明": "空段落数量 + 段落标记字号（参考文档实测）。空段的行高只由段落标记 rPr 的字号决定，漏配会让全文上移。paper.page_break_before=true 时 after_plan 必须为 0：分页已把论文表顶到页首，再留空段会溢出到下一页，顶出一整张空白页",
+    "after_title": 1,
+    "after_summary": 1,
+    "after_plan": 0,
+    "tail": 1,
+    "mark": {
+      "after_title": {
+        "ascii": "Times New Roman",
+        "eastAsia": "微软雅黑",
+        "cs": "Times New Roman",
+        "sz": 32,
+        "bold": true,
+        "color": "000000",
+        "kern": "0",
+        "align": "center",
+        "hint": "eastAsia"
+      },
+      "after_summary": {
+        "ascii": "Times New Roman",
+        "eastAsia": "宋体",
+        "cs": "Times New Roman",
+        "sz": 24,
+        "bold": false,
+        "hint": "default"
+      },
+      "after_plan": {
+        "ascii": "Times New Roman",
+        "eastAsia": "宋体",
+        "cs": "Times New Roman",
+        "sz": 22,
+        "bold": false,
+        "hint": "eastAsia"
+      },
+      "tail": {
+        "ascii": "Times New Roman",
+        "eastAsia": "宋体",
+        "cs": "Times New Roman",
+        "sz": 22,
+        "bold": false,
+        "hint": "default"
+      }
+    }
+  },
+  "sections": {
+    "summary_heading": "本周进展概述",
+    "plan_heading": "下周进展计划",
+    "paper_heading": "论文计划："
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_说明": "复制为 config.json 后按本机情况填写。config.json 已被 .gitignore 忽略，不会提交。所有敏感值（路径、邮箱、凭据、云端 id）只进 config.json，不进仓库。",
+
+  "report_name_cn": "李某研究进展",
+  "report_name_en": "LiMou_Research_Progress",
+
+  "workspace": "/绝对路径/到工作区（state.json 与输出 DOCX 所在目录）",
+
+  "_灵犀版数据源": "collect_recent.py 使用；无灵犀环境可整段不填",
+  "wps_cli": "/绝对路径/到/wps_docs_cli.py（缺省按 macOS 标准安装位置推导）",
+  "template_file_id": "云文档样式底座《YYYY年M月D日 ...研究进展.docx》的 file_id",
+  "template_name": "样式底座文件名.docx",
+  "template_spec": "/绝对路径/到/template_spec.json（缺省为仓库根）",
+  "archive_folder_id": "云文档存档文件夹的 folder_id",
+
+  "_通用版数据源": "collect_recent_fs.py 使用；灵犀版可不填",
+  "source_dirs": [
+    "/绝对路径/到/工作记录目录1",
+    "/绝对路径/到/工作记录目录2"
+  ],
+
+  "_通用存档": "archive_local.py 使用；用云端存档可不填",
+  "archive_dir": "/绝对路径/到/本地归档目录",
+
+  "_灵犀邮件": "连接器渠道；用 SMTP 可不填",
+  "mail_connector_id": "邮箱连接器 id",
+  "mail_account": "发件邮箱@example.com",
+
+  "_通用邮件": "send_mail_smtp.py 使用；凭据也可用环境变量 SMTP_HOST/SMTP_PORT/SMTP_USER/SMTP_PASSWORD/MAIL_FROM/MAIL_TO/MAIL_CC/IMAP_HOST",
+  "smtp_host": "smtp.example.com",
+  "smtp_port": 465,
+  "smtp_user": "发件邮箱@example.com",
+  "smtp_password": "专用授权码/密码（严禁提交进仓库）",
+  "mail_from": "发件邮箱@example.com",
+  "imap_host": "imap.example.com",
+
+  "mail_to": "收件人@example.com",
+  "mail_cc": "抄送人@example.com"
+}
